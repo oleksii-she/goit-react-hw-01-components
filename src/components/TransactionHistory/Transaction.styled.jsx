@@ -26,10 +26,20 @@ export const TableTh = styled.th`
 `;
 
 export const TableTd = styled.td`
-  margin-right: 20px;
-  border: 1px solid grey;
-  padding: ${p => p.theme.space[1]}px;
-  &:nth-child(even) {
+  text-align: center;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+  border: 1px solid #ddd;
+  padding: 8px;
+  initial-letter: 300px;
+`;
+
+export const TableTr = styled.tr`
+  &:nth-child(2n) {
+    background-color: ${props => props.theme.colors.primary};
+  }
+  &:hover {
     background-color: ${props => props.theme.colors.primary};
   }
 `;
