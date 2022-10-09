@@ -8,6 +8,7 @@ export const Status = styled.span`
   background-color: ${p => {
     return p.isOnline ? 'green' : 'red';
   }};
+  margin-right: ${p => p.theme.space[1]}px;
 `;
 
 export const List = styled.ul`
@@ -21,7 +22,8 @@ export const List = styled.ul`
 
 export const Item = styled.li`
   display: flex;
-  padding: ${p => p.theme.space[2]}px;
+  align-items: center;
+  padding: ${p => p.theme.space[3]}px;
   width: fit-content;
   margin-right: ${p => p.theme.space[2]}px;
   &:last-child {
@@ -32,4 +34,10 @@ export const Item = styled.li`
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 0px 0px 4px 4px;
+`;
+
+export const Text = styled.p`
+  margin-left: ${p => p.theme.space[2]}px;
+  font-family: ${p => p.theme.fonts[2]};
+  font-weight: ${p => p.theme.fontWeights[2]};
 `;
