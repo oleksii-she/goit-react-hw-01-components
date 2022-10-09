@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { backgroundColor, color } from 'styled-system';
 import { Status } from './friends.styled';
 export const FriendList = ({ avatar, name, isOnline = true }) => {
   return (

@@ -41,5 +41,6 @@ export const TableTr = styled.tr`
   }
   &:hover {
     background-color: ${props => props.theme.colors.primary};
+    transition: 3ms;
   }
 `;
