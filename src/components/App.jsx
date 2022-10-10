@@ -11,7 +11,7 @@ import { Statistics } from './Statistics/Statistics.js';
 
 // Список друзів
 import friends from './FriendList/friends.json';
-import { FriendListItems } from './FriendList/FriendListItems.js';
+import { FriendList } from './FriendList/FriendList.js';
 
 //Історія транзакцій
 import transactions from './TransactionHistory/transactions.json';
@@ -28,7 +28,7 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics stats={data} title="Upload stats" />,
-      <FriendListItems items={friends} />,
+      <FriendList friends={friends} />,
       <TransactionHistory items={transactions} />
     </Container>
   );
