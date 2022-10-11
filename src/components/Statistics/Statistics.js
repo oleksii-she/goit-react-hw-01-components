@@ -15,7 +15,7 @@ export const Statistics = ({ title, stats }) => {
         {stats.map(stat => (
           <StatisticsItem
             key={stat.id}
-            style={{ backgroundColor: generateHEx() }}
+            // style={{  }}
           >
             <StatisticsSpan>{stat.label}</StatisticsSpan>
             <StatisticsSpan>{stat.percentage}%</StatisticsSpan>
@@ -35,6 +35,3 @@ Statistics.propTypes = {
     })
   ),
 };
-function generateHEx() {
-  return '#' + Math.floor(Math.random() * 16777215).toString(16);
-}

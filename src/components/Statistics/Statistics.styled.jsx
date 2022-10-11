@@ -32,7 +32,9 @@ export const StatisticsItem = styled.li`
   }
   color: ${p => p.theme.colors.background};
 
-  background-color: #ffffff;
+  background-color: ${generateHEx};
+
+  /* background-color: #ffffff; */
   -webkit-box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
@@ -47,3 +49,7 @@ export const StatisticsSpan = styled.span`
     margin-bottom: ${p => p.theme.space[0]}px;
   }
 `;
+
+function generateHEx() {
+  return '#' + Math.floor(Math.random() * 16777215).toString(16);
+}
